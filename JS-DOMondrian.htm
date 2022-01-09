@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>JS-DOMondrian</title>
+    <style type="text/css">
+      :root { scroll-behavior:smooth; scroll-snap-type:y mandatory; }
+      *{padding:0; margin:0;}
+      table, html, body {width:100%; height:100%; padding:0; margin:0;}
+      table{border-collapse: collapse; scroll-snap-align:start; }
+      td{border:4px solid #222;}
+    </style>
+    <meta http-equiv="refresh" content="1" >
+  </head>
+  <body>
+    <script type="application/javascript" src="JS-DOMondrian.js"></script>
+    <script type="application/javascript">
+    const colorsAndFrequencies = [
+      ['red', 3], 
+      ['blue', 3], 
+      ['black', 6], 
+      ['yellow', 8], 
+      ['white', 24]
+    ];
+      
+      drawMondrian('mondrian', 10, 26, colorsAndFrequencies);
+      // setInterval(function(){
+      //   if (document.body.lastElementChild.tagName === 'TABLE') {
+      //     document.body.lastElementChild.remove();
+      //   }
+      //   drawMondrian('mondrian', 10, 26, colorsAndFrequencies);
+      // }, 1000);
+
+      </script>
+  </body>
+</html>
